@@ -1,46 +1,48 @@
-# MondoBarry Portfolio — thème WordPress
+**English** · [Français](README.fr.md)
 
-Thème WordPress one-page, sombre, pour portfolio de développeur ou d'admin système.
-Tout le contenu se règle depuis **Apparence → Personnaliser**, sans toucher au code.
+# MondoBarry Portfolio — WordPress theme
 
-![Aperçu](screenshot.png)
+Dark one-page WordPress theme for developer or sysadmin portfolios.
+All content is set from **Appearance → Customize**, without touching the code.
 
-Démo en production : [mondobarry.com](https://mondobarry.com)
+![Preview](screenshot.png)
 
-## Fonctionnalités
+Live demo: [mondobarry.com](https://www.mondobarry.com/en/)
 
-- **Hero** avec terminal animé (`whoami`, compétences, statut) et pastilles de secteurs configurables
-- **Sections** Compétences, Projets, Expérience (timeline), Infrastructure, Contact, Musique — chacune activable/désactivable
-- **Custom Post Types** `Projets` et `Expériences` avec meta boxes (stack, URL, statut live/en cours, mise en avant) ; repli sur les réglages du Customizer s'ils sont vides
-- **Typographie** : 10 polices Google Fonts + 6 monospace, chargées dynamiquement selon le choix
-- **Couleurs** via variables CSS injectées depuis le Customizer
-- **Formulaire de contact AJAX** : nonce WordPress, sanitization, honeypot anti-spam, envoi via `wp_mail()`
-- **Tracking optionnel** : GA4, Google Tag Manager, AdSense, Facebook Pixel (injectés seulement si l'ID est renseigné)
-- Nettoyage du `<head>` (générateur, RSD, WLW, shortlink)
+## Features
+
+- **Hero** with an animated terminal (`whoami`, skills, status) and configurable sector pills
+- **Sections** Skills, Projects, Experience (timeline), Infrastructure, Contact, Music — each one can be turned on or off
+- **Custom post types** `Projects` and `Experiences` with meta boxes (stack, URL, live / in-progress status, featured); falls back to the Customizer settings when empty
+- **Typography**: 10 Google Fonts + 6 monospace fonts, loaded dynamically according to the choice
+- **Colours** through CSS variables injected from the Customizer
+- **AJAX contact form**: WordPress nonce, sanitisation, anti-spam honeypot, sending through `wp_mail()`
+- **Optional tracking**: GA4, Google Tag Manager, AdSense, Facebook Pixel (only injected when an ID is set)
+- `<head>` clean-up (generator, RSD, WLW, shortlink)
 
 ## Installation
 
-1. Copier le dossier dans `wp-content/themes/mondobarry-theme`
-2. Activer le thème dans **Apparence → Thèmes**
-3. Personnaliser dans **Apparence → Personnaliser → 🎨 MondoBarry — Réglages**
+1. Copy the folder to `wp-content/themes/mondobarry-theme`
+2. Activate the theme in **Appearance → Themes**
+3. Customise it in **Appearance → Customize → 🎨 MondoBarry — Réglages**
 
-Prérequis : WordPress 6.0+, PHP 8.0+.
+Requirements: WordPress 6.0+, PHP 8.0+.
 
 ## Structure
 
 ```
-functions.php            Setup, enqueue, CSS dynamique, Customizer, AJAX, CPT
-customizer-content.php   Contenu éditable des sections
-index.php                Page one-page
-singular.php / 404.php   Articles, pages, erreur
+functions.php            Setup, enqueue, dynamic CSS, Customizer, AJAX, CPT
+customizer-content.php   Editable section content
+index.php                One-page layout
+singular.php / 404.php   Posts, pages, error
 assets/css/main.css      Styles
-assets/js/main.js        Reveal au scroll, menu mobile, formulaire AJAX
+assets/js/main.js        Scroll reveal, mobile menu, AJAX form
 ```
 
-## Auteur
+## Author
 
-**Mamadou Alimou Barry** — développeur WordPress depuis 2014 · [mondobarry.com](https://mondobarry.com)
+**Mamadou Alimou Barry** — WordPress developer since 2014 · [mondobarry.com/en](https://www.mondobarry.com/en/)
 
-## Licence
+## License
 
-GPL v2 ou ultérieure — voir [LICENSE](LICENSE).
+GPL v2 or later — see [LICENSE](LICENSE).
